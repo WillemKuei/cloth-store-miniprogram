@@ -1,0 +1,7 @@
+<template name="commodityInfo">
+  <view class='commodity-info'>
+    <image class='commodity-image' src="{{img_url}}" mode="scaleToFill" />
+    <view class='commodity-name'>{{text}}</view>
+    <view class='commodity-price'>￥{{price}}</view>
+  </view>
+</template>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "商城",
+  "usingComponents": {
+    "search-bar": "../../components/search-bar/index",
+    "store-section": "../../components/custom/store-section"
+  }
+}

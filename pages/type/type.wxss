@@ -1,0 +1,75 @@
+/* pages/class/class.wxss */
+page {
+  height: 100%;
+}
+
+.type-list {
+  float: left;
+  width: 100px;
+  height: calc(100% - 56px);
+  background-color: #f7f7f7;
+  padding: 5px 0;
+}
+
+.type-list-item {
+  font-size: 14px;
+  color: #101010;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.type-active {
+  background-color: #fff;
+}
+
+.product-list {
+  float: left;
+  width: calc(100% - 108px);
+  height: calc(100% - 56px);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4px 4px;
+}
+
+.product-list-item {
+  width: 32vw;
+  border: 1px solid rgba(187, 187, 187, 1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.product-image {
+  width: 32vw;
+  height: 32vw;
+}
+
+.product-name {
+  width: 100%;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #101010;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.product-list-item-bottom {
+  padding: 5px 2px 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.product-price {
+  font-size: 13px;
+  color: #e94147;
+}
+
+.product-count {
+  font-size: 13px;
+  color: #101010;
+}

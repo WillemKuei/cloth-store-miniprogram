@@ -1,0 +1,21 @@
+<!--pages/class/class.wxml-->
+<view class="container type-page">
+  <search-bar></search-bar>
+  <scroll-view class="type-list">
+    <block wx:for="{{typeList}}" wx:key="id">
+      <view class="type-list-item {{selectType === item.id ? 'type-active' : ''}}" bindtap="changeType" id="{{item.id}}">{{item.text}}</view>
+    </block>
+  </scroll-view>
+  <scroll-view class="product-list" enable-flex="true" scroll-y="true">
+    <block wx:for="{{productList}}" wx:for-index="index" wx:key="index">
+      <view class="product-list-item">
+        <image class="product-image" src="{{item.img_url}}" />
+        <view class="product-name">{{item.title}}</view>
+        <view class="product-list-item-bottom">
+          <view class="product-price">￥{{item.price}}</view>
+          <view class="product-count">销量: {{item.sell_count}}</view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

@@ -1,0 +1,43 @@
+<!--components/custom/store-section.wxml-->
+<import src="../../templates/commodity.wxml" />
+
+<view class='store-section' wx:if="{{theme === 1}}">
+  <view class='section-header'>
+    <image class="head-image" src="../../images/source/s1.jpg" />
+  </view>
+  <view class='section-body'>
+    <view class='body-left'>
+      <view class='top-commodity-info'>
+        <image class='top-commodity-image' src="{{topProduct.img_url}}" mode="scaleToFill" />
+        <view class='top-commodity-name'>{{topProduct.text}}</view>
+        <view class='top-commodity-price'>￥{{topProduct.price}}</view>
+      </view>
+    </view>
+    <view class='body-right'>
+      <block wx:for="{{products}}" wx:for-index="index" wx:key="id">
+        <template is="commodityInfo" data="{{...item}}"></template>
+      </block>
+    </view>
+  </view>
+</view>
+<view class="store-section flex-section section-theme2" wx:elif="{{theme === 2}}">
+  <view class="section-header">
+    <view class="header-title">新品推荐</view>
+    <a class="btn-link"><image class="arrow-right-icon" src="../../images/icons/arrow_right.png" /></a>
+  </view>
+  <view class="section-body">
+    <block wx:for="{{products}}" wx:for-index="index" wx:key="id">
+      <template is="commodityInfo" data="{{...item}}"></template>
+    </block>
+  </view>
+</view>
+<view class="store-section flex-section section-theme3" wx:elif="{{theme === 3}}">
+  <view class="section-header">
+    <view class="header-title">猜你喜欢</view>
+  </view>
+  <view class="section-body">
+    <block wx:for="{{products}}" wx:for-index="index" wx:key="id">
+      <template is="commodityInfo" data="{{...item}}"></template>
+    </block>
+  </view>
+</view>

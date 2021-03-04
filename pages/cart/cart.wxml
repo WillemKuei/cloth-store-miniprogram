@@ -1,0 +1,39 @@
+<!--pages/cart/cart.wxml-->
+<view class="container cart-page">
+  <view class="receive-address-info">
+    <view class="address-info-header">
+      <view class="address-tag">默认</view>
+      <view class="username">{{receiver.username}}</view>
+      <view class="phone-number">{{receiver.phone_number}}</view>
+    </view>
+    <view class="receive-address">{{receiver.address}}</view>
+    <image class="arrow-right-btn" src="../../images/icons/arrow_right.png" />
+  </view>
+  <mp-cells ext-class="cart-list">
+    <block wx:for="{{cartList}}" wx:for-index="index" wx:key="index">
+      <mp-slideview ext-class="cart-list-bg" buttons="{{slideButtons}}" icon="{{true}}" bindbuttontap="slideButtonTap">
+        <mp-cell ext-class="cart-list-item">
+          <view class="left-side">
+            <image class="product-image" src="/images/source/s3.jpg" />
+          </view>
+          <view class="right-side">
+            <view class="cart-info-header">{{item.text}}</view>
+            <view class="cart-info-box">
+              <view class="product-price">￥720</view>
+              <view class="product-count-info">
+                <button class="btn-count btn-minus" data-index="{{index}}" wx:if="{{item.count > 0}}" bindtap="minusCount">-</button>
+                <view class="count" wx:if="{{item.count > 0}}">{{item.count}}</view>
+                <button class="btn-count btn-add" data-index="{{index}}" bindtap="addCount">+</button>
+              </view>
+            </view>
+            <view class="cart-info-bottom">编号: <label class="product-number">{{item.number}}</label></view>
+          </view>
+        </mp-cell>
+      </mp-slideview>
+    </block>
+  </mp-cells>
+  <view class="total-price-info">
+    <view class="total-price-bg">实付: <view class="total-price">{{totalPrice}}</view></view>
+    <view class="submit">提交订单</view>
+  </view>
+</view>

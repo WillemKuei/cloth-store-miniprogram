@@ -1,0 +1,10 @@
+<!--components/search-bar/search-bar.wxml-->
+<view class='search-bar-container'>
+  <button class='scan-btn'>
+    <image class='icon-scan' src='../../images/icons/scan.png'></image>
+  </button>
+  <view class='search-input-container'>
+    <input class='search-input' auto-focus placeholder='请输入查找商品' />
+    <image src='../../images/icons/search.png' class='icon-search' />
+  </view>
+</view>

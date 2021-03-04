@@ -1,0 +1,31 @@
+<!--pages/mine/mine.wxml-->
+<view class="container mine-page">
+  <view class="mine-page-header">
+    <view class="userinfo-box">
+      <view class="avatar-box">
+        <image class="avatar-image" mode="scaleToFill" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=830124755,2456669237&fm=26&gp=0.jpg" />
+      </view>
+      <view class="info-container">
+        <view class="nickname">WillamWong</view>
+        <view class="jifen-box">
+          <image class="jifen-icon" src="/images/icons/jifen.png" />
+          <view class="jifen-text">积分3911</view>
+        </view>
+      </view>
+      <a class="info-manage-link">
+        <view class="link-text">账号管理</view>
+        <image class="around-arrow-right" src="/images/icons/around_arrow_right.png" />
+      </a>
+    </view>
+    <view class="custom-tap-bar">
+      <block wx:for="{{tapList}}" wx:for-index="index" wx:key="index">
+        <view class="tap-bar-item">
+          <image class="bar-item-icon" src="{{item.icon}}" />
+          <view class="bar-item-title">{{item.title}}</view>
+          <mp-badge content="99+" extClass="badge-number"></mp-badge>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="mine-page-body"></view>
+</view>

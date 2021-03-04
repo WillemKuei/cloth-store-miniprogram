@@ -1,0 +1,126 @@
+/* components/custom/store-section.wxss */
+@import "../../templates/commodity.wxss";
+
+.store-section {
+  width: 100%;
+}
+
+.section-header {
+  width: 100%;
+  height: 120px;
+}
+
+.head-image {
+  width: 100%;
+  height: 100%;
+}
+
+.section-body {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-left {
+  width: 30%;
+  height: 284px;
+  position: relative;
+}
+
+.body-right {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.top-commodity-info {
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 4px;
+}
+
+.top-commodity-image {
+  width: 100%;
+  height: 72px;
+}
+
+.top-commodity-name {
+  width: 100%;
+  height: 27px;
+  font-size: 10px;
+  color: #101010;
+  margin: 4px 0;
+  line-height: 14px;
+  text-overflow: clip;
+}
+
+.top-commodity-price {
+  width: 100%;
+  height: 18px;
+  font-size: 11px;
+  color: #FF3F3F;
+}
+
+.flex-section > .section-body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 8px;
+}
+
+.section-theme2 > .section-header {
+  height: 30px;
+  position: relative;
+  margin-top: 8px;
+}
+
+.section-theme2 > .section-header > .header-title {
+  font-size: 16px;
+  color: #333;
+  margin-left: 15px;
+  line-height: 30px;
+}
+
+.section-theme2 > .section-header > .btn-link {
+  width: 30px;
+  padding: 4px 4px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.arrow-right-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.section-theme2 > .section-body > .commodity-info {
+  width: 31% !important;
+}
+
+.section-theme3 > .section-header {
+  width: 100%;
+  height: 30px;
+}
+
+.section-theme3 > .section-header > .header-title {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  line-height: 30px;
+}
+
+.section-theme3 > .section-body > .commodity-info {
+  width: calc(50% - 8px) !important;
+}

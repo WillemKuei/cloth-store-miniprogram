@@ -1,0 +1,27 @@
+.commodity-info {
+  padding: 5px 2px;
+  width: 31%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.commodity-image {
+  width: 100%;
+  height: 72px;
+}
+
+.commodity-name {
+  width: 100%;
+  height: 27px;
+  font-size: 10px;
+  color: #101010;
+  margin: 4px 0;
+  line-height: 14px;
+  text-overflow: clip;
+}
+
+.commodity-price {
+  width: 100%;
+  height: 18px;
+  font-size: 11px;
+  color: #FF3F3F;
+}

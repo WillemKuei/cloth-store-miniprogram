@@ -1,0 +1,122 @@
+/* pages/mine/mine.wxss */
+.mine-page-header {
+  background-color: #fff;
+}
+
+.userinfo-box {
+  background-color: #DF5548;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.avatar-box {
+  width: 55px;
+  height: 55px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.avatar-box > .avatar-image {
+  width: 100%;
+  height: 100%;
+}
+
+.info-container {
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.nickname {
+  font-size: 14px;
+  color: #fff;
+}
+
+.jifen-box {
+  margin-top: 8px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  background-color: #FA4F51;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 12px;
+}
+
+.jifen-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+
+.jifen-text {
+  height: 24px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.info-manage-link {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.info-manage-link > .link-text {
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.around-arrow-right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+}
+
+.custom-tap-bar {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(246, 246, 246, 1);
+  box-shadow: 0 2px 4px rgba(246, 246, 246, 1);
+}
+
+.tap-bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.bar-item-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.bar-item-title {
+  font-size: 14px;
+  color: #101010;
+  text-align: center;
+}
+
+.badge-number {
+  position: absolute;
+  top: 0;
+  right: -8px;
+}
